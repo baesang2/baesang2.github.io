@@ -112,19 +112,16 @@ figcaption { margin-top: 8px; font-size: 13px; color: var(--sub); }
 .cards a:hover b { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
 .cards.wide { grid-template-columns: repeat(3, 1fr); }
 
-/* 대표 보도: 비대칭 배치 */
-.feature { display: grid; grid-template-columns: 1.55fr 1fr; gap: 24px; }
-.feature a { display: block; text-decoration: none; }
-.feature img { width: 100%; object-fit: cover; border-radius: 10px; background: var(--tint); }
-.feature-main img { aspect-ratio: 4 / 3; }
-.feature-main b { display: block; margin-top: 14px; font-size: 20px; line-height: 1.4; letter-spacing: -0.02em; }
-.feature-main p { margin: 6px 0 0; font-size: 15px; }
-.feature-side { display: grid; gap: 20px; align-content: start; }
-.feature-side img { aspect-ratio: 16 / 10; }
-.feature-side b { display: block; margin-top: 10px; font-size: 15px; line-height: 1.45; }
-.feature .y { display: block; margin-top: 12px; font-size: 13px; color: var(--sub); font-variant-numeric: tabular-nums; }
-.feature-side .y { margin-top: 10px; }
-.feature a:hover b { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
+/* 홈 대표 보도: 작은 사진 + 오른쪽 글 */
+.feat-list { list-style: none; margin: 0; padding: 0; }
+.feat-list li + li { border-top: 1px solid var(--line); }
+.feat-list a { display: grid; grid-template-columns: 200px 1fr; gap: 24px; align-items: start; padding: 18px 0; text-decoration: none; }
+.feat-list li:first-child a { padding-top: 0; }
+.feat-list img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 8px; background: var(--tint); }
+.feat-list .y { display: block; font-size: 13px; color: var(--sub); font-variant-numeric: tabular-nums; }
+.feat-list b { display: block; margin-top: 2px; font-size: 17px; line-height: 1.45; }
+.feat-list p { margin: 4px 0 0; font-size: 13px; line-height: 1.6; color: var(--sub); }
+.feat-list a:hover b { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
 
 /* 보도 페이지: 첫 카드를 크게 */
 .cards > li.big { grid-column: span 2; grid-row: span 2; }
@@ -222,15 +219,8 @@ footer p { margin: 8px 0 0; }
   .cards img { border-radius: 8px; }
   .cards .no { margin-top: 0; }
   .cards b { font-size: 16px; }
-  .feature { grid-template-columns: 1fr; gap: 0; }
-  .feature-main { padding-bottom: 20px; }
-  .feature-main b { font-size: 18px; }
-  .feature-side { gap: 0; }
-  .feature-side a { display: grid; grid-template-columns: 112px 1fr; gap: 16px; padding: 14px 0; border-top: 1px solid var(--line); }
-  .feature-side a:last-child { border-bottom: 1px solid var(--line); }
-  .feature-side img { aspect-ratio: 3 / 2; border-radius: 8px; }
-  .feature-side .y { margin-top: 0; }
-  .feature-side b { margin-top: 2px; font-size: 16px; }
+  .feat-list a { grid-template-columns: 112px 1fr; gap: 16px; padding: 14px 0; }
+  .feat-list b { font-size: 16px; }
   .cards > li.big { grid-column: auto; grid-row: auto; }
   .cards > li.big > a { display: block; }
   .cards > li.big img { min-height: 0; aspect-ratio: 3 / 2; height: auto; border-radius: 10px; }
