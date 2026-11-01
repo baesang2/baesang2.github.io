@@ -149,6 +149,7 @@ figcaption { margin-top: 8px; font-size: 13px; color: var(--sub); }
 .rows .t { font-size: 15px; }
 .rows .m { display: block; font-size: 13px; color: var(--sub); margin-top: 2px; }
 .rows.wide li { grid-template-columns: 104px 1fr; }
+.rows.noyear li { grid-template-columns: 1fr; }
 
 details summary { cursor: pointer; font-size: 15px; color: var(--sub); list-style: none; display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; }
 details summary::-webkit-details-marker { display: none; }
