@@ -78,7 +78,10 @@ h1 .en { font-size: 17px; font-weight: 500; color: var(--sub); letter-spacing: 0
 .cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin: 32px 0 0; }
 .cta-links { font-size: 15px; color: var(--sub); line-height: 2; }
 .cta-links a { white-space: nowrap; }
-.cta-links a + a::before { content: "·"; color: var(--line); margin: 0 10px; display: inline-block; text-decoration: none; }
+.cta-links a { display: inline-flex; align-items: center; gap: 6px; }
+.cta-links .ico { width: 14px; height: 14px; flex: none; opacity: .75; }
+.cta-links a:hover .ico { opacity: 1; }
+.cta-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
 
 .page-head { padding-top: 64px; padding-bottom: 8px; }
 .page-head h1 { font-size: 32px; }
@@ -234,8 +237,7 @@ footer p { margin: 8px 0 0; }
   .lec-gallery figcaption { font-size: 12px; }
   .lec-intro { font-size: 16px; }
   .btn { width: 100%; }
-  .cta-links { display: flex; flex-wrap: wrap; gap: 4px 18px; }
-  .cta-links a + a::before { content: none; }
+  .cta-links { gap: 4px 18px; }
   .teaser img { width: 96px; }
   .contact { margin-top: 64px; padding: 28px 22px; border-radius: 14px; }
   .contact .btn { width: 100%; }
