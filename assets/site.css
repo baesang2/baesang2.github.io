@@ -124,6 +124,8 @@ figcaption { margin-top: 8px; font-size: 13px; color: var(--sub); }
 .cards b { display: block; font-size: 17px; margin-top: 2px; line-height: 1.45; }
 .cards p { margin: 4px 0 0; font-size: 15px; line-height: 1.6; }
 .cards .for { margin-top: 6px; font-size: 13px; color: var(--sub); }
+.cards .proof { display: flex; align-items: flex-start; gap: 6px; }
+.cards .proof svg { width: 15px; height: 15px; flex: none; margin-top: 2px; }
 .cards a { text-decoration: none; display: block; }
 .cards a:hover b { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
 .cards.wide { grid-template-columns: repeat(3, 1fr); }
