@@ -175,6 +175,8 @@ details[open] summary { margin-bottom: 8px; }
 .book .meta { margin: 6px 0 0; font-size: 13px; color: var(--sub); }
 .book p.desc { margin: 16px 0 0; font-size: 15px; }
 .book .shops { display: flex; gap: 8px; margin-top: 20px; }
+.book .award-line { display: flex; align-items: center; gap: 10px; margin-top: 14px; }
+.book .award-line img { width: 40px; height: 40px; flex: none; object-fit: contain; border-radius: 0; box-shadow: none; }
 
 /* 강연 안내 한 줄 (홈) */
 .teaser { display: flex; gap: 20px; align-items: center; padding: 20px; border: 1px solid var(--line); border-radius: 14px; text-decoration: none; }
