@@ -146,6 +146,17 @@ figcaption { margin-top: 8px; font-size: 13px; color: var(--sub); }
 .cards.two > li.big img { aspect-ratio: 16 / 9; }
 .cards.two > li.big b { font-size: 20px; }
 
+/* 기획 보도 페이지 */
+.back { display: inline-block; margin-bottom: 14px; font-size: 14px; font-weight: 600; color: var(--sub); text-decoration: none; }
+.back:hover { color: var(--accent); }
+.page-head .plan-meta { margin-top: 10px; font-size: 15px; color: var(--sub); font-variant-numeric: tabular-nums; }
+.page-head .plan-meta + p { color: var(--ink); }
+.plan-links { display: flex; gap: 16px; font-size: 15px; font-weight: 600; }
+.plan-photo { width: 100%; max-width: 480px; margin-top: 28px; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 10px; background: var(--tint); }
+.prints { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.prints.one { grid-template-columns: 1fr; }
+.prints img { width: 100%; border-radius: 4px; box-shadow: 0 0 0 1px var(--line); }
+
 /* 현장 사진 띠 */
 .strip-wrap { margin-top: 48px; }
 .strip {
@@ -242,6 +253,7 @@ footer p { margin: 0; }
   .cards > li > a, .cards > li.row { display: grid; grid-template-columns: 112px 1fr; gap: 16px; align-items: start; }
   .cards img { border-radius: 8px; }
   .cards .no { margin-top: 0; }
+  .prints { grid-template-columns: 1fr; }
   .rows.thumbs li { grid-template-columns: 60px 64px 1fr; gap: 0 10px; }
   .rows .th img { width: 64px; }
   .cards.two { grid-template-columns: repeat(2, 1fr); gap: 24px 12px; }
