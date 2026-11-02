@@ -105,7 +105,8 @@ figcaption { margin-top: 8px; font-size: 13px; color: var(--sub); }
 
 /* PC: 구역 머리선. 항목 사이의 옅은 선과 구분되는 진한 선으로 구역을 나눈다 */
 @media (min-width: 721px) {
-  .sec { margin-top: 96px; padding-top: 18px; border-top: 1.5px solid var(--ink); }
+  .sec { margin-top: 96px; padding-top: 18px; border-top: 1px solid #a8a59e; }
+  .cards > li.row b { margin-top: 14px; }
   main > .sec:first-child { margin-top: 56px; }
   .sec-body > .rows > li:first-child,
   .sec-body > div:first-child > .rows:first-child > li:first-child { padding-top: 0; }
