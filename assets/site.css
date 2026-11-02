@@ -96,6 +96,7 @@ figure { margin: 0; }
 figcaption { margin-top: 8px; font-size: 13px; color: var(--sub); }
 .hero-photo { margin: 40px 0 0; }
 .hero-photo img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; background: var(--tint); }
+.hero-photo.photo-43 img { aspect-ratio: 4 / 3; }
 
 /* 섹션: 왼쪽 라벨 + 오른쪽 본문 */
 .sec { display: grid; grid-template-columns: 160px 1fr; gap: 40px; padding: 72px 0 0; }
