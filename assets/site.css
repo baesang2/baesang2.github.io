@@ -102,6 +102,14 @@ figcaption { margin-top: 8px; font-size: 13px; color: var(--sub); }
 .sec > h2 { margin: 0; font-size: 15px; font-weight: 700; color: var(--accent); letter-spacing: -0.01em; line-height: 1.7; }
 .sec-body > * + * { margin-top: 40px; }
 .span { grid-column: 1 / -1; }
+
+/* PC: 구역 머리선. 항목 사이의 옅은 선과 구분되는 진한 선으로 구역을 나눈다 */
+@media (min-width: 721px) {
+  .sec { margin-top: 96px; padding-top: 18px; border-top: 1.5px solid var(--ink); }
+  main > .sec:first-child { margin-top: 56px; }
+  .sec-body > .rows > li:first-child,
+  .sec-body > div:first-child > .rows:first-child > li:first-child { padding-top: 0; }
+}
 .label { font-size: 13px; font-weight: 600; color: var(--sub); margin: 0 0 8px; letter-spacing: 0; }
 
 /* 카드 그리드 (보도·강연 주제) */
