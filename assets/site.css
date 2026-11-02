@@ -45,14 +45,15 @@ img { display: block; max-width: 100%; height: auto; }
 }
 .topbar .container { display: flex; align-items: center; justify-content: space-between; height: 56px; }
 .brand { font-size: 15px; font-weight: 700; letter-spacing: -0.01em; text-decoration: none; }
-.tabs { display: flex; gap: 28px; margin: 0; padding: 0; list-style: none; align-self: stretch; }
+.tabs { display: flex; gap: 2px; margin: 0; padding: 3px; list-style: none; background: #f0efeb; border-radius: 9px; }
 .tabs li { display: flex; }
 .tabs a {
-  display: inline-flex; align-items: center; padding: 0; border-bottom: 2px solid transparent; margin-bottom: -1px;
-  font-size: 15px; font-weight: 600; color: var(--sub); text-decoration: none;
+  display: inline-flex; align-items: center; height: 32px; padding: 0 16px; border-radius: 7px;
+  font-size: 15px; font-weight: 600; color: #55534e; text-decoration: none;
+  transition: background .15s, color .15s;
 }
 .tabs a:hover { color: var(--ink); }
-.tabs a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--ink); }
+.tabs a[aria-current="page"], .tabs a[aria-current="page"]:hover { background: #fff; color: var(--accent); font-weight: 700; box-shadow: 0 1px 3px rgba(20, 30, 45, .16); }
 
 /* 버튼 */
 .btn {
@@ -209,7 +210,7 @@ footer p { margin: 0; }
   body { font-size: 16px; }
   .container { padding-left: 20px; padding-right: 20px; }
   .topbar .container { height: 52px; }
-  .tabs { gap: 22px; }
+  .tabs a { padding: 0 14px; }
   .hero { padding-top: 40px; padding-bottom: 32px; }
   .id { gap: 16px; }
   .avatar { width: 72px; height: 72px; }
