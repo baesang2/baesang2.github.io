@@ -106,7 +106,7 @@ figcaption { margin-top: 8px; font-size: 13px; color: var(--sub); }
 /* PC: 구역 머리선. 항목 사이의 옅은 선과 구분되는 진한 선으로 구역을 나눈다 */
 @media (min-width: 721px) {
   .sec { margin-top: 96px; padding-top: 18px; border-top: 1px solid #a8a59e; }
-  .cards > li.row b { margin-top: 14px; }
+  #topics .cards > li.row b { margin-top: 14px; }
   main > .sec:first-child { margin-top: 56px; }
   .sec-body > .rows > li:first-child,
   .sec-body > div:first-child > .rows:first-child > li:first-child { padding-top: 0; }
@@ -135,11 +135,11 @@ figcaption { margin-top: 8px; font-size: 13px; color: var(--sub); }
 .feat-list p { margin: 4px 0 0; font-size: 13px; line-height: 1.6; color: var(--sub); }
 .feat-list a:hover b { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
 
-/* 보도 페이지: 첫 카드를 크게 */
-.cards > li.big { grid-column: span 2; grid-row: span 2; }
-.cards > li.big > a { display: flex; flex-direction: column; height: 100%; }
-.cards > li.big img { flex: 1; aspect-ratio: auto; min-height: 260px; height: 100%; }
-.cards > li.big b { font-size: 20px; }
+/* 보도 탭: 산복빨래방 한 장 + 그 아래 2열 */
+.cards.two { grid-template-columns: repeat(2, 1fr); gap: 28px 16px; }
+.cards.two > li.big { grid-column: 1 / -1; }
+.cards.two > li.big img { aspect-ratio: 16 / 9; }
+.cards.two > li.big b { font-size: 20px; }
 
 /* 현장 사진 띠 */
 .strip-wrap { margin-top: 48px; }
@@ -232,13 +232,15 @@ footer p { margin: 8px 0 0; }
   .cards > li > a, .cards > li.row { display: grid; grid-template-columns: 112px 1fr; gap: 16px; align-items: start; }
   .cards img { border-radius: 8px; }
   .cards .no { margin-top: 0; }
+  .cards.two { grid-template-columns: repeat(2, 1fr); gap: 24px 12px; }
+  .cards.two > li { padding: 0; border: 0; }
+  .cards.two > li > a, .cards.two > li.row { display: block; }
+  .cards.two .no { margin-top: 10px; }
+  .cards.two b { font-size: 15px; }
+  .cards.two > li.big b { font-size: 18px; }
   .cards b { font-size: 16px; }
   .feat-list a { grid-template-columns: 112px 1fr; gap: 16px; padding: 14px 0; }
   .feat-list b { font-size: 16px; }
-  .cards > li.big { grid-column: auto; grid-row: auto; }
-  .cards > li.big > a { display: block; }
-  .cards > li.big img { min-height: 0; aspect-ratio: 3 / 2; height: auto; border-radius: 10px; }
-  .cards > li.big .no { margin-top: 12px; }
   .strip-wrap { margin-top: 32px; margin-right: -20px; }
   .strip { padding-right: 20px; }
   .strip figure { flex-basis: 72%; }
