@@ -107,7 +107,10 @@ figcaption { margin-top: 8px; font-size: 13px; color: var(--sub); }
 /* PC: 구역 머리선. 항목 사이의 옅은 선과 구분되는 진한 선으로 구역을 나눈다 */
 @media (min-width: 721px) {
   .sec { margin-top: 96px; padding-top: 18px; border-top: 1px solid #a8a59e; }
-  #topics .cards > li.row b { margin-top: 14px; }
+  #topics .cards { grid-template-columns: 1fr; gap: 0; }
+  #topics .cards > li.row { display: grid; grid-template-columns: 200px 1fr; gap: 24px; align-items: start; padding: 18px 0; }
+  #topics .cards > li.row:first-child { padding-top: 0; }
+  #topics .cards > li.row + li.row { border-top: 1px solid var(--line); }
   main > .sec:first-child { margin-top: 56px; }
   .sec-body > .rows > li:first-child,
   .sec-body > div:first-child > .rows:first-child > li:first-child { padding-top: 0; }
@@ -159,6 +162,9 @@ figcaption { margin-top: 8px; font-size: 13px; color: var(--sub); }
 .rows .t { font-size: 15px; }
 .rows .m { display: block; font-size: 13px; color: var(--sub); margin-top: 2px; }
 .rows.wide li { grid-template-columns: 104px 1fr; }
+.rows.thumbs li { grid-template-columns: 64px 84px 1fr; align-items: start; }
+.rows.thumbs .y { white-space: nowrap; }
+.rows .th img { width: 84px; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 4px; background: var(--tint); box-shadow: 0 0 0 1px var(--line); }
 .rows.noyear li { grid-template-columns: 1fr; }
 .rows .t.org { display: flex; align-items: flex-start; gap: 10px; }
 .org-ico { width: 16px; height: 16px; flex: none; margin-top: 4px; color: var(--ink); }
@@ -235,6 +241,8 @@ footer p { margin: 0; }
   .cards > li > a, .cards > li.row { display: grid; grid-template-columns: 112px 1fr; gap: 16px; align-items: start; }
   .cards img { border-radius: 8px; }
   .cards .no { margin-top: 0; }
+  .rows.thumbs li { grid-template-columns: 60px 64px 1fr; gap: 0 10px; }
+  .rows .th img { width: 64px; }
   .cards.two { grid-template-columns: repeat(2, 1fr); gap: 24px 12px; }
   .cards.two > li { padding: 0; border: 0; }
   .cards.two > li > a, .cards.two > li.row { display: block; }
