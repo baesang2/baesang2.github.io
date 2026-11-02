@@ -244,7 +244,6 @@ footer p { margin: 0; }
   .dateline li { padding: 3px 0; }
   .dateline li + li::before { content: none; }
   .hero-photo { margin-top: 32px; }
-  .hero-photo img { aspect-ratio: 4 / 3; }
   .sec { grid-template-columns: 1fr; gap: 16px; padding-top: 56px; }
   .sec > h2 { font-size: 24px; color: var(--ink); }
   .sec-body > * + * { margin-top: 32px; }
