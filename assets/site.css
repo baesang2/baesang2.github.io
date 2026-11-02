@@ -76,13 +76,12 @@ h1 { font-size: 40px; line-height: 1.2; font-weight: 700; margin: 0; }
 h1 .en { font-size: 17px; font-weight: 500; color: var(--sub); letter-spacing: 0; margin-left: 10px; }
 .tagline { margin: 6px 0 0; font-size: 15px; color: var(--sub); }
 .lead { margin: 32px 0 0; font-size: 17px; }
-.cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin: 32px 0 0; }
-.cta-links { font-size: 15px; color: var(--sub); line-height: 2; }
-.cta-links a { white-space: nowrap; }
-.cta-links a { display: inline-flex; align-items: center; gap: 6px; }
-.cta-links .ico { width: 14px; height: 14px; flex: none; opacity: .75; }
-.cta-links a:hover .ico { opacity: 1; }
-.cta-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
+.cta { display: flex; flex-direction: column; gap: 10px; max-width: 440px; margin: 32px 0 0; }
+.cta .btn { width: 100%; border-radius: 10px; }
+.cta-links { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; }
+.cta-links a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px; height: 68px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--ink); font-size: 12px; font-weight: 600; text-decoration: none; white-space: nowrap; transition: background .15s, border-color .15s, color .15s; }
+.cta-links a:hover { background: var(--tint); border-color: #d3d0c9; color: var(--accent); }
+.cta-links .ico { width: 20px; height: 20px; flex: none; }
 
 .page-head { padding-top: 64px; padding-bottom: 8px; }
 .page-head h1 { font-size: 32px; }
@@ -274,7 +273,6 @@ footer p { margin: 0; }
   .lec-gallery figcaption { font-size: 12px; }
   .lec-intro { font-size: 16px; }
   .btn { width: 100%; }
-  .cta-links { gap: 4px 18px; }
   .teaser img { width: 96px; }
   .contact { margin-top: 64px; padding: 28px 22px; border-radius: 14px; }
   .contact .btn { width: 100%; }
