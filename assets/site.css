@@ -281,3 +281,9 @@ footer p { margin: 0; }
 }
 
 .tag { font-weight: 700; color: var(--accent); margin-right: 6px; }
+
+/* 약력 페이지 */
+.profile-text { margin: 0; }
+.faq > div + div { margin-top: 28px; }
+.faq h3 { margin: 0; font-size: 17px; line-height: 1.5; font-weight: 700; }
+.faq p { margin: 6px 0 0; }
