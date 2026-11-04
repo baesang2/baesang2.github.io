@@ -86,6 +86,7 @@ h1 .en { font-size: 17px; font-weight: 500; color: var(--sub); letter-spacing: 0
 .page-head { padding-top: 64px; padding-bottom: 8px; }
 .page-head h1 { font-size: 32px; }
 .page-head p { margin: 12px 0 0; color: var(--sub); font-size: 17px; }
+.home-link { display: inline-block; margin-top: 14px; color: var(--accent); font-size: 15px; font-weight: 600; text-decoration-color: currentColor; }
 
 .dateline { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 0; margin: 48px 0 0; padding: 18px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); list-style: none; font-size: 15px; color: var(--sub); }
 .dateline li + li::before { content: "—"; color: #c9c6bf; margin: 0 14px; }
