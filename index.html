@@ -33,6 +33,20 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebSite",
+      "@id": "https://baesang2.github.io/#website",
+      "url": "https://baesang2.github.io/",
+      "name": "이상배",
+      "alternateName": [
+        "이상배 부산일보 기자",
+        "Lee Sang-bae"
+      ],
+      "inLanguage": "ko",
+      "publisher": {
+        "@id": "https://baesang2.github.io/#person"
+      }
+    },
+    {
       "@type": "ProfilePage",
       "@id": "https://baesang2.github.io/",
       "url": "https://baesang2.github.io/",
@@ -44,6 +58,9 @@
       },
       "primaryImageOfPage": {
         "@id": "https://baesang2.github.io/#profile-photo"
+      },
+      "isPartOf": {
+        "@id": "https://baesang2.github.io/#website"
       }
     },
     {
